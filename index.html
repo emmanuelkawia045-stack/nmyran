@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>N Myran | TOTO Clothing</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --primary:#ff6b00;
+      --secondary:#6f42c1;
+      --bg:#ffffff;
+      --text:#222222;
+    }
+
+    body.dark{
+      --primary:#0d6efd;
+      --secondary:#20c997;
+      --bg:#121212;
+      --text:#f1f1f1;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      transition:0.4s;
+    }
+
+    .navbar{
+      background:linear-gradient(45deg,var(--primary),var(--secondary));
+    }
+
+    .hero{
+      background:linear-gradient(120deg,var(--secondary),var(--primary));
+      color:#fff;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    .product-card{
+      border-radius:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .product-card:hover{transform:translateY(-10px)}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">N Myran</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#products" data-en="Products" data-sw="Bidhaa">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-sw="Kuhusu">About</a></li>
+        <li class="nav-item"><button onclick="toggleTheme()" class="theme-btn ms-3">Theme</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 data-en="Welcome to <span>N Myran</span>" data-sw="Karibu <span>N Myran</span>"></h1>
+    <p class="mt-3" data-en="Best TOTO Clothing – Sons of Mens Download" data-sw="Mavazi Bora ya TOTO – Sons of Mens Download"></p>
+  </div>
+</section>
+
+<!-- Slider -->
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" class="d-block w-100" height="450">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" class="d-block w-100" height="450">
+    </div>
+  </div>
+</div>
+
+<!-- Products -->
+<section id="products" class="container my-5">
+  <h2 class="text-center mb-4" data-en="Our Products" data-sw="Bidhaa Zetu"></h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" class="card-img-top">
+        <div class="card-body text-center">
+  <h5 data-en="TOTO Premium Wear" data-sw="Mavazi ya Premium TOTO"></h5>
+  <p data-en="High quality fabric, modern design." data-sw="Ubora wa juu, muundo wa kisasa."></p>
+  <p class="fw-bold">TZS 35,000</p>
+  <a href="https://wa.me/255700000000" class="btn btn-primary">Order WhatsApp</a>
+</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c" class="card-img-top">
+        <div class="card-body text-center">
+  <h5 data-en="TOTO Premium Wear" data-sw="Mavazi ya Premium TOTO"></h5>
+  <p data-en="High quality fabric, modern design." data-sw="Ubora wa juu, muundo wa kisasa."></p>
+  <p class="fw-bold">TZS 35,000</p>
+  <a href="https://wa.me/255700000000" class="btn btn-primary">Order WhatsApp</a>
+</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" class="card-img-top">
+        <div class="card-body text-center">
+  <h5 data-en="TOTO Premium Wear" data-sw="Mavazi ya Premium TOTO"></h5>
+  <p data-en="High quality fabric, modern design." data-sw="Ubora wa juu, muundo wa kisasa."></p>
+  <p class="fw-bold">TZS 35,000</p>
+  <a href="https://wa.me/255700000000" class="btn btn-primary">Order WhatsApp</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container my-5">
+  <h2 data-en="About N Myran" data-sw="Kuhusu N Myran"></h2>
+  <p data-en="We sell high quality TOTO fashion with fun colors and modern design." data-sw="Tunauza mavazi ya kisasa ya TOTO yenye rangi za kuvutia na ubora wa hali ya juu."></p>
+</section>
+
+<!-- Download Section -->
+<section id="download" class="container my-5">
+  <h2 class="text-center mb-4" data-en="Downloads" data-sw="Upakuaji"></h2>
+  <p class="text-center" data-en="Download Sons of Mens content below" data-sw="Pakua maudhui ya Sons of Mens hapa chini"></p>
+  <div class="text-center">
+    <a href="#" class="btn btn-lg btn-primary m-2">Download ZIP</a>
+    <a href="#" class="btn btn-lg btn-secondary m-2">Download PDF</a>
+  </div>
+</section>
+
+<!-- Team / Marketplace -->
+<section id="team" class="container my-5">
+  <h2 class="text-center mb-4" data-en="Our Team & Marketplace" data-sw="Timu Yetu & Soko"></h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card product-card p-3 text-center">
+        <h5>Marketing Manager</h5>
+        <p data-en="Promotes N Myran brand online and offline." data-sw="Anatangaza chapa ya N Myran mtandaoni na nje ya mtandao."></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card p-3 text-center">
+        <h5>Sales Team</h5>
+        <p data-en="Handles customers and orders." data-sw="Anahudumia wateja na maagizo."></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card product-card p-3 text-center">
+        <h5>Online Marketplace</h5>
+        <p data-en="Sell products via website & social media." data-sw="Kuuza bidhaa kupitia tovuti na mitandao ya kijamii."></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Buttons -->
+<a href="https://wa.me/255700000000" target="_blank" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:bold;z-index:999">WhatsApp</a>
+<a href="tel:+255700000000" style="position:fixed;bottom:70px;right:20px;background:#0d6efd;color:#fff;padding:12px 18px;border-radius:50px;text-decoration:none;font-weight:bold;z-index:999">Call</a>
+
+<footer>
+  <p>&copy; 2025 N Myran | TOTO Clothing</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:1000,once:true});</script>
+
+<script>
+  let lang='en';
+  function toggleLang(){
+    lang = lang==='en'?'sw':'en';
+    document.querySelectorAll('[data-en]').forEach(el=>{
+      el.innerHTML = el.getAttribute('data-'+lang);
+    });
+  }
+
+  function toggleTheme(){
+    document.body.classList.toggle('dark');
+  }
+
+  setInterval(toggleLang,5000); // auto change language
+  toggleLang();
+</script>
+
+</body>
+</html>
